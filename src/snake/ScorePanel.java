@@ -17,6 +17,14 @@ public class ScorePanel extends JPanel {
 	private final String SCORE_LABEL = "SCORE:";
 	private String score;
 
+	public String getScore() {
+		return score;
+	}
+
+	public void setScore(String score) {
+		this.score = score;
+	}
+
 	public ScorePanel() {
 		setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
 		setBackground(Color.DARK_GRAY);

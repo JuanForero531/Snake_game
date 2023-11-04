@@ -94,6 +94,7 @@ public class Snake {
 	public void check() {
 		Ellipse2D.Double head = snakeParts.get(0);
 		Apple apple = gameField.getApple();
+		Obstacle obstacle = gameField.getObstacle();
 
 		// Ate itself
 		for (int i = 1; i < snakeParts.size(); i++) {
