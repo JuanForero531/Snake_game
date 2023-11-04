@@ -5,10 +5,11 @@ Este proyecto es una implementación del clásico juego de la serpiente en Java.
 ## Características Principales:
 
 Control de la serpiente con teclas direccionales.
-Generación aleatoria de manzanas en el campo de juego, a partir de la lectura de archivos.
-Generación periódica de obstáculos, a partir de la lectura de archivos.
-Aumento de la velocidad del juego a medida que se recolectan más manzanas.
+Generación aleatoria de manzanas en el campo de juego, a partir de la lectura de archivos. con un intervalo de 5 segundos 
+Generación periódica de obstáculos, a partir de la lectura de archivos. con un intervalo de 4 segundos
+Aumento de la velocidad del juego a medida que se recolectan más manzanas. despues de obtener una puntuacion mayor a 20
 Registro y visualización de las puntuaciones más altas,a partir de la lectura de archivos.
+el manejo de la puntuacion esta dado a partir de la recoleccion de manzanas donde cada manzana suma 10 puntos.
 
 ![image](https://github.com/JuanForero531/Snake_game/assets/111099370/48590a5a-a3bd-413f-aee3-d9641f47e0ea)
 
