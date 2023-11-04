@@ -39,7 +39,7 @@ public class Snake {
 		switch (direction) {
 			case UP:
 				moveBody();
-				// head
+
 				snakeParts.set(0, new Ellipse2D.Double(snakeParts.get(0).getMinX(),
 						snakeParts.get(0).getMinY() - 20, XSIZE, YSIZE));
 				if (snakeParts.get(0).getMinY() < 0) {
@@ -49,7 +49,7 @@ public class Snake {
 
 			case DOWN:
 				moveBody();
-				// head
+
 				snakeParts.set(0, new Ellipse2D.Double(snakeParts.get(0).getMinX(),
 						snakeParts.get(0).getMinY() + 20, XSIZE, YSIZE));
 				if (snakeParts.get(0).getMaxY() > gameField.getBounds().getMaxY()) {
@@ -59,7 +59,7 @@ public class Snake {
 
 			case LEFT:
 				moveBody();
-				// head
+
 				snakeParts.set(0, new Ellipse2D.Double(
 						snakeParts.get(0).getMinX() - 20, snakeParts.get(0)
 						.getMinY(), XSIZE, YSIZE));
@@ -70,7 +70,7 @@ public class Snake {
 
 			case RIGHT:
 				moveBody();
-				// head
+
 				snakeParts.set(0, new Ellipse2D.Double(
 						snakeParts.get(0).getMinX() + 20, snakeParts.get(0)
 						.getMinY(), XSIZE, YSIZE));
@@ -96,7 +96,7 @@ public class Snake {
 		Apple apple = gameField.getApple();
 		Obstacle obstacle = gameField.getObstacle();
 
-		// Ate itself
+
 		for (int i = 1; i < snakeParts.size(); i++) {
 			if (head.getMinX() == snakeParts.get(i).getMinX()
 					&& head.getMinY() == snakeParts.get(i).getMinY()) {
@@ -104,7 +104,7 @@ public class Snake {
 				return;
 			}
 		}
-		// Ate apple
+
 		if (head.getMinX() == apple.getShape().getMinX()
 				&& head.getMinY() == apple.getShape().getMinY()) {
 			scorePanel.addPoints(10);

@@ -17,7 +17,7 @@ public class SnakeFrame extends JFrame {
 	private Thread thread;
 	private Snake snake;
 
-	// Current direction of the snake
+
 	private Direction direction = Direction.UP;
 
 	private boolean started = false;
