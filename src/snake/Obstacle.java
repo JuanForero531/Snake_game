@@ -49,13 +49,13 @@ public class Obstacle {
     public void next(Snake snake) {
         long currentTime = System.currentTimeMillis();
         if (currentTime - creationTime >= obstacleExpiryInterval) {
-            // El obstáculo ha expirado, genera una nueva posición
+
             generateNewPosition();
         }
 
         for (Ellipse2D.Double e : snake.getParts()) {
             if (e.getMinX() == x && e.getMinY() == y) {
-                // El obstáculo está en la misma posición que la serpiente, genera una nueva posición
+
                 generateNewPosition();
             }
         }

@@ -9,8 +9,8 @@ import java.io.IOException;
 
 public class Apple {
 
-	public static final int XSIZE = 20;
-	public static final int YSIZE = 20;
+	public static final int XSIZE = 40;
+	public static final int YSIZE = 40;
 
 	private double x;
 	private double y;

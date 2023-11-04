@@ -16,10 +16,7 @@ public class SnakeFrame extends JFrame {
 	private GameField gameField;
 	private Thread thread;
 	private Snake snake;
-
-	// Current direction of the snake
 	private Direction direction = Direction.UP;
-
 	private boolean started = false;
 
 
@@ -90,6 +87,7 @@ public class SnakeFrame extends JFrame {
 						"Something went wrong :( /n Please relunch app");
 				break;
 		}
+
 	}
 
 
